@@ -18,7 +18,6 @@ rule("Rule 1")
 		Set Primary Fire Enabled(Event Player, False);
 		Add Health Pool To Player(Event Player, Armor, 100, False, False);
 		Set Max Ammo(Event Player, 1, 1);
-		Set Reload Enabled(Event Player, False);
 	}
 }
 
