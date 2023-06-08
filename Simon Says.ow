@@ -1084,7 +1084,7 @@ rule("Healing Team 2")
 
 disabled rule("This rule is for testing, ignore it, like for real")
 {
-	event
+	event				
 	{
 		Ongoing - Each Player;
 		Team 2;
