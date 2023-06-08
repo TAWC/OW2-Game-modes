@@ -1082,7 +1082,7 @@ rule("Healing Team 2")
 	}
 }
 
-rule("Basic Rule cos F you :)")
+disabled rule("This rule is for testing, ignore it, like for real")
 {
 	event
 	{
@@ -1107,13 +1107,14 @@ rule("Basic Rule cos F you :)")
 			Event Player, Button(Interact)), 7);
 		Wait(3, Ignore Condition);
 		Big Message(All Players(All Teams), Custom String("Someones Being annoying"));
-		Move Player to Team(Player Closest To Reticle(Event Player, All Teams), Opposite Team Of(Team Of(Player Closest To Reticle(
-			Event Player, All Teams))), -1);
+		Remove player((Player Closest To Reticle(Event Player, All Teams))
+
 		Wait(1, Ignore Condition);
 		Big Message(All Players(All Teams), Custom String("Fixed"));
 		Wait(2, Ignore Condition);
 		Restart Match;
 		Allow Button(Event Player, Button(Primary Fire));
 		Allow Button(Event Player, Button(Ultimate));
+
 	}
 }
